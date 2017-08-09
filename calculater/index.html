@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculater</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"></head>
+	<link rel="stylesheet" type="text/css" href="font/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+<body>
+<h1>Calculator</h1>
+<div class="Calc "> <form>
+ 		<input type="text" class="calc_body"  id="dispaly" disabled>
+
+    <div class="button_body">
+ 		<input type="button" class="btn btn-danger" value="c" id="keys" onclick='addtoScreen("c")'>
+ 		<input type="button"   class ="btn btn-warning" value="CE"  id="keys" onclick='backspace()'> 
+ 		<input type="button" value="x^2" id="keys" onclick='power()'>
+ 		<input type="button" value="+" id="keys" onclick='addtoScreen("+")'>
+ 		<br>
+ 		<input type="button" value="9" id="keys" onclick='addtoScreen("9")'>
+ 		<input type="button" value="8" id="keys" onclick='addtoScreen("8")'>
+ 		<input type="button" value="7" id="keys" onclick='addtoScreen("7")''>
+ 		<input type="button" value="-" id="keys" onclick='addtoScreen("-")'>
+ 		<br>
+ 		<input type="button" value="6" id="keys" onclick='addtoScreen("6")'>
+ 		<input type="button" value="5" id="keys" onclick='addtoScreen("5")'>
+ 		<input type="button" value="4" id="keys" onclick='addtoScreen("4")'>
+ 		<input type="button" value="*" id="keys" onclick='addtoScreen("*")'>
+ 		<br>
+ 		<input type="button" value="3" id="keys" onclick='addtoScreen("3")'>
+ 		<input type="button" value="2" id="keys" onclick='addtoScreen("2")'>
+ 		<input type="button" value="1" id="keys" onclick='addtoScreen("1")'>
+ 		<input type="button" value="/" id="keys" onclick='addtoScreen("/")'>
+ 		<br>
+ 		<input type="button" value="0" id="keys" onclick='addtoScreen("0")'>
+ 		<input type="button" value="." id="keys" onclick='addtoScreen(".")'>
+ 		<input type="button" class="btn btn-success" value="=" id="equal" onclick='ans()'>
+    </div>
+
+  </form>
+  </div>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
